@@ -1,12 +1,12 @@
 # Transfer filter contract
-EOS has a method to check incoming transfers and This contract makes token transfers to it fail, if memo in those transfers does not
-satisfy certain conditions. Currently set conditions are:
+EOS.IO has a method to check incoming transfers. If the memo of a transaction destined for this contract does not satisfy certain conditions, this contract would cancel the transaction. 
+Currently set conditions are:
 * Memo has to be exactly 8 symbols long;
 * Contain only digits;
 
-You add different asserts in ontransfer action to modify these conditions.
+You can add different asserts in ontransfer action to modify these conditions.
 
-Only transfers wher contract is receiver are currently filtered.
+Only transfers where this contract is the receiver are currently being filtered.
 
 ### Build
 ```commandline
