@@ -19,7 +19,7 @@ cleos set code <your-account-name> transferfilter.wast
 ```
 
 ### Test
-#### Withouth memo
+#### Without memo
 ```commandline
 $ cleos transfer eosio <your-account-name> "10.0000 SYS"
 Error 3050003: eosio_assert_message assertion failure
