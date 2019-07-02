@@ -8,7 +8,7 @@ You can add different asserts in ontransfer action to modify these conditions.
 
 Only transfers where this contract is the receiver are currently being filtered.
 
-### Build
+### Build (on CDT over 1.3.0 needed)
 ```commandline
 eosiocpp -o transferfilter.wast transferfilter.cpp
 ```
